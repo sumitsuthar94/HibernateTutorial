@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.hibernate.tutorial.entity.Employee" table="EMPLOYEE">
+      <meta attribute="class-description">
+         This class contains the employee detail. 
+      </meta>
+      <id name="id" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="firstName" column="first_name" type="string"/>
+      <property name="lastName" column="last_name" type="string"/>
+      <property name="salary" column="salary" type="int"/>
+   </class>
+   <class name="com.hibernate.tutorial.entity.Address" table="Address">
+       <meta attribute="class-description">
+           This class contains the Address detail.
+       </meta>
+       <id name="id" type="int" column="id">
+           <generator class="native"/>
+       </id>
+       <property name="city" column="city" type="string"/>
+       <property name="state" column="state" type="string"/>
+       <property name="zipcode" column="zipcode" type="int"/>
+       
+   </class>
+   
+</hibernate-mapping>
