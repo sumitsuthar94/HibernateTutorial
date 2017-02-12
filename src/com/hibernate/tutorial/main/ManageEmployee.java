@@ -27,7 +27,7 @@ public class ManageEmployee {
 			throw new ExceptionInInitializerError(ex);
 		}
 		ManageEmployee me = new ManageEmployee();
-		// Integer empId1 = me.addEmployee("sumit", "suthar", 2323000);
+		 Integer empId1 = me.addEmployee("sumit", "suthar", 2323000);
 		// Integer empId2 = me.addEmployee("foo", "bar", 523223);
 
 		Address adr1 = me.addAddress("udaipur", "Rajasthan", 313002);
